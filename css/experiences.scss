@@ -1,0 +1,36 @@
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  width:50em;
+  border: #1D3956 2px solid;
+  border-radius: 20px;
+  h1{
+    margin-left: 16px;
+    margin-top: 13px;
+    font-size: 30px;
+  }
+  h2{
+    font-size:20px;
+    margin-top: 1em;
+    margin-left: 30px;
+    a {
+      text-decoration: none;
+      color: #e38c36;
+      &:hover{
+        color: #f6b73b;
+      }
+    }
+  }
+  img {
+    margin: 1em;
+    border-radius: 20px;
+  }
+}
+
+
+.experience-cards {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+

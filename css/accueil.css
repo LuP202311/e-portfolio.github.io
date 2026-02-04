@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/* rubrique cartes */
+.card {
+  background-color: aliceblue;
+  width: 70%;
+  text-decoration: none;
+}
+
+.conteneur-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 0.3em;
+}
+
+.menu {
+  border: #52809c solid 2px;
+  background-color: #f0f8ff;
+  padding: 2em 0;
+  margin: 0 3em;
+  border-radius: 3em;
+}
+.menu h3 {
+  text-align: center;
+  margin-bottom: 13px;
+  font-family: Ink Free, serif;
+  font-weight: bold;
+  color: #0e3357;
+  text-decoration: #1D3956 underline solid;
+}
+
+/* header */
+#imgPortfolio {
+  opacity: 60%;
+  width: 100%;
+  height: 15em;
+  position: absolute;
+}
+
+#titre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  margin-left: 1%;
+  color: ghostwhite;
+}
+#titre h1 {
+  font-family: "Segoe Script", serif;
+  margin-left: 3em;
+  font-size: 3em;
+}
+#titre h2 {
+  font-family: "Segoe Script", serif;
+  margin-left: 4em;
+  font-size: 3em;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#image {
+  border-radius: 100%;
+  border: #1D3956 0.1em solid;
+  position: relative;
+  width: 15em;
+  height: 15em;
+  z-index: 1;
+  right: 14em;
+}
+
+#sparkle {
+  position: relative;
+  width: 5em;
+  z-index: 2;
+  bottom: 2em;
+  right: 15em;
+}
+
+@media (max-width: 1100px) {
+  #sparkle {
+    display: none;
+  }
+}
+@media (max-width: 990px) {
+  #image {
+    display: none;
+  }
+  #titre {
+    padding-top: 2.5em;
+  }
+}
+@media (max-width: 600px) {
+  #titre h1 {
+    margin-left: 1em;
+  }
+  #titre h2 {
+    margin-left: 1em;
+  }
+}
+@media (max-width: 416px) {
+  #titre h1 {
+    font-size: 2.5em;
+  }
+  #titre h2 {
+    font-size: 2.5em;
+  }
+  #imgPortfolio {
+    height: 12em;
+  }
+}
+/* bulle message */
+.bulle-message {
+  margin: 1em 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+#pdp {
+  width: 14em;
+  height: 11em;
+  object-fit: contain;
+  border-radius: 50%;
+  border: #255f95 solid 2px;
+}
+
+.texte-profil {
+  width: 100%;
+  height: 100%;
+  margin-left: 3em;
+  background-color: #b8c4d2;
+  padding: 1em 2em;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  align-content: center;
+  font-family: "Century Schoolbook", serif;
+}
+
+@media (max-width: 990px) {
+  .bulle-message {
+    margin-top: 5em;
+  }
+}
+@media (max-width: 648px) {
+  .texte-profil {
+    overflow-y: auto;
+    height: 15em;
+    margin-left: 1em;
+  }
+  #pdp {
+    width: 8em;
+    height: 8em;
+  }
+}
+/* profil */
+.profil {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 990px) {
+  .profil {
+    flex-wrap: wrap;
+  }
+}
+/* contact */
+.contact {
+  margin: 1em;
+  border: solid 0.1em #8cb1d2;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.contact h4 {
+  text-align: center;
+  margin-top: 0.5em;
+  text-decoration: underline #52809c;
+}
+
+.objets-contact p {
+  filter: blur(8px);
+}
+
+@keyframes trembler {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+.objets-contact img {
+  padding-left: 0.5em;
+  width: 1.5em;
+  height: 1em;
+}
+
+.objets-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.présentation p {
+  overflow: hidden;
+  height: 6em;
+  overflow-y: auto;
+}
+
+.présentation h4 {
+  text-align: center;
+  margin-top: 0.5em;
+  text-decoration: underline #52809c;
+}
+
+.présentation {
+  border: solid 0.1em #8cb1d2;
+  margin: 1em;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 70%;
+}
+
+@media (max-width: 1063px) {
+  .présentation {
+    width: 50%;
+  }
+  .contact {
+    width: auto;
+  }
+}
+@media (max-width: 780px) {
+  .présentation {
+    width: 100%;
+  }
+  .contact {
+    width: auto;
+  }
+}
+/* projet personnel */
+/* .projetPerso {
+    text-align: center;
+}
+
+.projetPerso button {
+    border-radius: 30px;
+    padding: 1em;
+    background-color: white;
+    border: #9bb8da solid 2px;
+}
+
+.projetPerso a {
+    text-decoration: none;
+    color: black;
+} */
+/* CV */
+#cv {
+  margin: 1em 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3em;
+  padding-top: 5em;
+  background-color: #b8c4d2;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+#cv button {
+  background-color: ghostwhite;
+  border: #255f95 0.1em solid;
+  padding: 1em;
+  border-radius: 30px;
+}
+#cv h3 {
+  margin-bottom: 0.8em;
+}
+
+/*# sourceMappingURL=accueil.css.map */
