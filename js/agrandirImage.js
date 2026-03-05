@@ -2,6 +2,7 @@ const images = document.querySelectorAll(".img-certif")
 const imagesgr = document.querySelectorAll(".img-certif-gr")
 const buttons = document.querySelectorAll(".fermer-btn")
 const bgrPage = document.querySelector("body")
+const divs =
 
 imagesgr.forEach(imagesgr => imagesgr.style.display = "none")
 buttons.forEach(button => button.style.display = "none")
