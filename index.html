@@ -15,6 +15,8 @@
     <script src="js/animations.js" type="module"></script>
     <script src="js/contact.js" type="module"></script>
     <script src="js/pdf.js" type="module"></script>
+    <script src="js/agrandirImage.js" type="module"></script>
+
 </head>
   <body>
     <!--NAVBAR-->
@@ -32,9 +34,6 @@
           </li>-->
           <li class="nav-item">
             <a class="nav-link" href="html/projets.html">Projets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="html/experiences.html">Expériences</a>
           </li>
           <!--<li class="nav-item">
             <a class="nav-link" href="html/projetsPerso.html">Projets personnels</a>
@@ -69,9 +68,9 @@
 
     <div class="profil">
       <div class="bulle-message">
-        <img id="pdp" src="images/pdp.jpg">
+        <!--<img id="pdp" src="images/pdp.jpg">-->
         <div class="texte-profil">
-          <p>Bienvenue sur mon e-portfolio ! ☆</p>
+          <p>Bienvenue sur mon e-portfolio ! </p>
           <p> Vous y trouverez un aperçu de mes expériences, mes loisirs, mes projets universitaires et comment me contacter. </p>
           <p>Tout en bas de la page d'accueil, vous pouvez aussi y retrouver mon CV. </p>
         </div>
@@ -95,9 +94,10 @@
         </div>
       </div>
     </div>
+
     <!-- FIN PROFIL -->
     <div class="menu">
-      <h3> Découvrez ci-dessous :</h3>
+      <h2> Mes expériences </h2>
       <div class="conteneur-menu">
         <!--<a href="experiences.html" class="card" style="width: 18rem;">
           <img src="../images/competences.jpeg" class="card-img-top" alt="...">
@@ -106,32 +106,57 @@
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </a>-->
-        <a href="html/projets.html" class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="images/projets.png" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Mes projets universitaires</h5>
-                <p class="card-text">Découvrez mes projets universitaires !</p>
-              </div>
-            </div>
+        <div class="card-body">
+          <img src="images/gardeMaLicorne_page.png">
+          <div class="card-text">
+            <p class="card-date">avr. 2025 - juin 2025 • <strong>2 mois</strong></p>
+            <h4>Stage - Développeuse Full Stack</h4>
+            <p class="card-ent-name">Garde Ma Licorne</p>
+            <ul>
+              <li>Conception d'une maquette Figma</li>
+              <li>Migrations de données avec Doctrine Migrations</li>
+              <li>Amélioration de l'application web : Ajout de nouvelles fonctionnalités et correction des failles</li>
+              <li>Manipulation des données avec ORM</li>
+            </ul>
           </div>
-        </a>
-        <a href="html/art.html" class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="images/loisirs.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Mes loisirs</h5>
-                <p class="card-text"> Découvrez mes centres d'intérêts et mes projets hors du domaine de l'informatique !</p>
-              </div>
-            </div>
+        </div>
+
+        <div class="card-body">
+          <img src="images/img.png">
+          <div class="card-text">
+          <p class="card-date">sept. 2025 - sept. 2026 • <strong>1 an</strong></p>
+          <h4>Alternance - Technicienne Cybersécurité</h4>
+          <p class="card-ent-name">Fondation Mozaïk</p>
+          <ul>
+            <li>Apporter du support technique de niveau 1, 2 et 3 auprès des utilisateurs</li>
+            <li>Optimisation de requêtes SQL sur Metabase pour réduire le temps de chargement</li>
+            <li>Documenter sur les mesures de protection de données établies au sein de la fondation</li>
+            <li>Sensibiliser les équipes de la fondation à la Cybersécurité, en rappelant les bonnes pratiques pour se protéger de potentielles cyberattaques</li>
+            <li>Participation à la rédaction de la PSSI,  définissant les objectifs et amélioration au niveau de la sécurité SI</li>
+            <li>Collaboration avec l’équipe cabinet Mozaïk RH sur la recherche d’un agent IA pour automatiser des tâches</li>
+          </ul>
           </div>
-        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="certif-section">
+      <h2>Mes certifications</h2>
+      <div class="container-certif">
+        <div class="certif-card-body">
+          <h4> SecNumAcadémie - MOOC de l'ANSSI </h4>
+          <p>Délivrée par <span>ANSSI - Agence nationale de la sécurité des systèmes d'information</span></p>
+          <img class="img-certif" src="images/attestation-suivi_lucie-phung_26.png">
+          <i><img src="images/69544.png"> : Cliquez sur l'image pour le voir en grand</i>
+        </div>
+        <img class="fermer-btn" src="images/cross-23.png">
+        <img class="img-certif-gr" src="images/attestation-suivi_lucie-phung_26.png">
+        <div class="certif-card-body">
+          <h4>Certification Cisco - La mise en réseau </h4>
+        </div>
+        <div class="certif-card-body">
+          <h4>TryHackMe</h4>
+        </div>
       </div>
     </div>
 
