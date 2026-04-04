@@ -1,27 +1,17 @@
 export const projets = [{
-    titre: "Refonte de site",
-    description: "Projet de refonte du site francedepression.fr",
+    titre: "Refonte du site web : francedepression.fr",
+    description: "Ajout de nouvelles fonctionnalités (Barres de recherche, filtres,...), affichage de graphes avec SVG en JavaScript et intégration de tests avec PhpUnit.",
     lien:"https://github.com/LuP202311/refontesite_francedepression",
     etiquettes: ["JavaScript", "HTML", "CSS", "PHP", "UwAmp", "Figma", "PhpStorm"]
-},{
-    titre: "Gomoku",
-    description: "Projet reproduction du jeu 'Gomoku' en Java",
-    lien:"",
-    etiquettes: ["Java", "IntelliJ"]
 }, {
-    titre: "Développement d'une application mobile",
-    description: "Développement d'une application mobile de gestion d'une résidence participative",
-    lien:"https://github.com/LuP202311/My_Application_PowerHome",
-    etiquettes: ["XML", "Java", "Figma", "Android", "Android Studio"]
+    titre: "Développement d'une application complexe : Graines D'Actions",
+    description: "Intégration d’un classement, des défis, d’échange de points contre des bons d’achat, d’une page d’administration,… , gestion des données et authentification via Firebase.",
+    lien:"https://github.com/idkrm/GrainesDActions",
+    etiquettes: ["Typescript", "React Native", "Figma", "Visual Code Studio", "Firebase", "Expo"]
 }, {
-    titre: "e-Portfolio",
-    description: "Projet personnel" + " - " + "Utilisation de NodeJs pour créer un serveur",
-    lien:"https://lup202311.github.io/e-Portfolio_FE/",
-    etiquettes: ["JavaScript", "HTML", "CSS", "NodeJS", "PhpStorm"]
-}, {
-    titre: "Sudoku",
-    description: "Projet reproduction du jeu 'Sudoku' en Visual Basic",
-    lien:"",
-    etiquettes: ["Visual Basic", "Visual Studio"]
+    titre: "e-Portfolio (Projet Personnel)",
+    description: "",
+    lien:"https://lup202311.github.io/e-portfolio.github.io/",
+    etiquettes: ["JavaScript", "HTML", "SCSS (CSS)", "Visual Studio Code", "GitHub Pages"]
 }
 ]

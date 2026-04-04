@@ -13,6 +13,20 @@ function creerTexte(elemType, content){
 }
 
 /**
+ * Créer l'élément pour l'image
+ * @param {string} elemType
+ * @param {string} img
+ */
+function creerImage(elemType, img) {
+    const elem = document.createElement(elementType);
+    elem.src = image;
+    elem.style.width = '100%';
+    elem.style.height = '20em';
+    
+    return elem;
+}
+
+/**
  * Créer l'élément pour les étiquettes
  * @param {string} elemType
  * @param {string} etiquettes
@@ -45,7 +59,7 @@ function creerEtiquettes(elemType, etiquettes){
  */
 function ajoutProjet(projet){
     const elemProj = document.createElement('div')
-    const elemTitre = creerTexte('h3', projet.titre)
+    const elemTitre = creerTexte('a', projet.titre)
     const elemDescr = creerTexte('p', projet.description)
     const elemEtiq = creerEtiquettes('section', projet.etiquettes)
     elemProj.append(elemTitre, elemDescr, elemEtiq)
@@ -55,7 +69,13 @@ function ajoutProjet(projet){
     elemProj.style.margin = "1em"
     elemProj.style.borderRadius = "1em"
 
-    elemProj.href = projet.lien
+    elemTitre.href = projet.lien
+    elemTitre.target = "_blank"
+    elemTitre.style.textDecoration = "none"
+    elemTitre.style.color = "#191970"
+    elemTitre.style.fontSize = "21px"
+    elemTitre.style.fontWeight = "550"
+    elemTitre.style.fontFamily = "DejaVu Sans Mono, monospace"
 
     return elemProj
 
