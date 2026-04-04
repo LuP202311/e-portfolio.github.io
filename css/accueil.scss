@@ -109,13 +109,14 @@ span {
 /* rubrique cartes */
 
 .card-body {
-    background-color: snow;
+    background-color: rgb(246, 249, 249);
     text-decoration: none;
     display: flex;
     flex-direction: column;
     border: #0e3357 2px solid;
     border-radius: 10px;
     max-width: 30em;
+    margin: 0 1.5em 0 1.5em;
 
 
     h4 {
@@ -288,7 +289,7 @@ span {
     position: relative;
     border: #255f95 2px solid;
     padding: 2em 1em;
-    border-radius: 20px 0 20px 20px;
+    border-radius: 20px 20px 20px 20px;
     font-family: "Gill Sans MT", serif;
 }
 
@@ -327,7 +328,7 @@ span {
 
 .contact {
     margin: 1em;
-    border: solid 0.1em #8cb1d2;
+    border: solid 0.1em #175891;
     border-radius: 20px;
     padding: 0 10px;
 }
